@@ -1,0 +1,88 @@
+/* [WEEK 4: Form Styling] */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.auth-container, .dashboard-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem;
+}
+
+.dashboard-container {
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #078930;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #078930;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #054d1a;
+}
+
+.link-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.link-text a {
+    color: #078930;
+    text-decoration: none;
+}
+
+.error { color: red; text-align: center; margin-bottom: 15px; }
+.success { color: green; text-align: center; margin-bottom: 15px; }
+.logout-btn { text-align: center; margin-bottom: 20px; }
