@@ -1,88 +1,31 @@
-/* [WEEK 4: Form Styling] */
-body {
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.auth-container, .dashboard-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 500px;
-    margin: 2rem;
-}
-
+/* Uses your base.css dark theme variables */
 .dashboard-container {
-    max-width: 800px;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 2.5rem;
 }
-
-h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
+.dashboard-container h2 { color: #00bcd4; margin-bottom: 1.5rem; text-align: center; }
+.dashboard-container label { color: #9aa9b1; display: block; margin-bottom: 0.5rem; font-weight: 500; }
+.dashboard-container input, 
+.dashboard-container textarea, 
+.dashboard-container select {
+    width: 100%; padding: 0.75rem; margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px; color: #eaeaea; font-size: 1rem;
 }
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-}
-
-.form-group input, 
-.form-group textarea, 
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-group input:focus, 
-.form-group textarea:focus {
-    outline: none;
-    border-color: #078930;
-}
-
-.btn {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #078930;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #054d1a;
-}
-
-.link-text {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 0.9rem;
-}
-
-.link-text a {
-    color: #078930;
-    text-decoration: none;
-}
-
-.error { color: red; text-align: center; margin-bottom: 15px; }
-.success { color: green; text-align: center; margin-bottom: 15px; }
-.logout-btn { text-align: center; margin-bottom: 20px; }
+.dashboard-container input:focus, .dashboard-container textarea:focus { outline: none; border-color: #00bcd4; box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2); }
+.btn-submit { width: 100%; padding: 1rem; background: #00bcd4; color: white; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; }
+.btn-submit:hover { background: #00a5b8; }
+.logout-link { text-align: center; display: block; margin-bottom: 2rem; color: #f44336; text-decoration: none; }
+.logout-link:hover { text-decoration: underline; }
+.error { color: #f44336; text-align: center; margin-bottom: 15px; }
+.success { color: #4caf50; text-align: center; margin-bottom: 15px; }
+.event-list { margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; }
+.event-item { display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.2); padding: 15px; margin-bottom: 10px; border-radius: 8px; border-left: 4px solid #00bcd4;}
+.event-item h4 { color: #eaeaea; margin: 0 0 5px 0; }
+.event-item small { color: #9aa9b1; }
+.btn-delete { background: rgba(244, 67, 54, 0.2); color: #f44336; border: 1px solid #f44336; padding: 8px 15px; border-radius: 6px; cursor: pointer; text-decoration: none; font-size: 0.9rem; }
+.btn-delete:hover { background: #f44336; color: white; }
